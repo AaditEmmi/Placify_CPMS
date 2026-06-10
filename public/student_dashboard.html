@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .profile-section {
+      margin-bottom: 20px;
+    }
+
+    .profile-label {
+      font-family: 'NDot55';
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .profile-value {
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .link-btn {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="vertical-text glitch-hover">PLACIFY</div>
+  <div class="container">
+    <h2 style="margin-bottom: 2rem;">Student Portal</h2>
+
+    <!-- DASHBOARD TAB -->
+    <div id="tab-dashboard" class="tab-content">
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <h3 id="s_kpi_applied">0</h3>
+          <p>Applications</p>
+        </div>
+        <div class="kpi-card">
+          <h3 id="s_kpi_shortlisted" style="color: #ffff2a;">0</h3>
+          <p>Interviewing</p>
+        </div>
+        <div class="kpi-card">
+          <h3 id="s_kpi_rejected" style="color: #ff2a2a;">0</h3>
+          <p>Rejected</p>
+        </div>
+        <div class="kpi-card">
+          <h3 id="s_kpi_placed" style="color: #2aff2a;">0</h3>
+          <p>Offers</p>
+        </div>
+      </div>
+
+      <!-- VIEW MODE -->
+      <div id="profileView" class="glass-card">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px;">
+          <div>
+            <h2 id="v_fullname"
+              style="margin-bottom: 5px; text-transform: none; font-family: 'Playfair Display'; font-size: 2rem;">
+              Loading...</h2>
+            <p id="v_branch" class="text-muted" style="margin-top: 0;">Student</p>
+          </div>
+          <button class="btn btn-outline" onclick="toggleProfileEdit()">Edit Profile</button>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div>
+            <span class="profile-label">USN</span>
+            <div class="profile-value" id="v_usn">-</div>
+            <span class="profile-label">CGPA</span>
+            <div class="profile-value" id="v_cgpa">-</div>
+            <span class="profile-label">Age</span>
+            <div class="profile-value" id="v_age">-</div>
+            <span class="profile-label">Semester</span>
+            <div class="profile-value" id="v_sem">-</div>
+            <span class="profile-label">Email</span>
+            <div class="profile-value" id="v_email">-</div>
+            <span class="profile-label">Phone</span>
+            <div class="profile-value" id="v_phone">-</div>
+            <span class="profile-label">Skills</span>
+            <div class="profile-value" id="v_skills">-</div>
+          </div>
+          <div>
+            <span class="profile-label">Career Objective</span>
+            <div class="profile-value" id="v_objective">-</div>
+            <span class="profile-label">Experience</span>
+            <div class="profile-value" id="v_experience">-</div>
+            <span class="profile-label">Projects</span>
+            <div class="profile-value" id="v_projects">-</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px; border-top: 1px solid #333; padding-top: 20px;">
+          <a id="v_linkedin" href="#" target="_blank" class="btn btn-outline link-btn d-none"
+            style="margin-right: 10px;">LinkedIn</a>
+          <a id="v_github" href="#" target="_blank" class="btn btn-outline link-btn d-none">GitHub</a>
+        </div>
+      </div>
+
+      <!-- EDIT MODE -->
+      <div id="profileEdit" class="glass-card d-none">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+          <h3>Edit Profile</h3>
+          <div>
+            <button class="btn btn-outline" style="padding: 5px 15px; margin-right:10px;"
+              onclick="document.getElementById('passwordModal').classList.remove('d-none')">Change Password</button>
+            <button class="btn btn-outline" style="padding: 5px 15px;" onclick="toggleProfileEdit()">Cancel</button>
+          </div>
+        </div>
+        <form id="profileForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <input type="text" id="p_usn" placeholder="USN (University Managed)" readonly
+              style="opacity: 0.6; cursor: not-allowed;">
+            <input type="text" id="p_fullname" placeholder="Full Name (University Managed)" readonly
+              style="opacity: 0.6; cursor: not-allowed;">
+            <input type="email" id="p_email" placeholder="Email (University Managed)" readonly
+              style="opacity: 0.6; cursor: not-allowed;">
+            <input type="text" id="p_phone" placeholder="Phone (University Managed)" readonly
+              style="opacity: 0.6; cursor: not-allowed;">
+            <input type="number" id="p_age" placeholder="Age (University Managed)" readonly
+              style="opacity: 0.6; cursor: not-allowed;">
+            <input type="number" id="p_sem" placeholder="Semester (University Managed)" readonly
+              style="opacity: 0.6; cursor: not-allowed;">
+            <input type="text" id="p_branch" placeholder="Branch">
+            <input type="number" step="0.01" id="p_cgpa" placeholder="CGPA (University Managed)" readonly
+              style="opacity: 0.6; cursor: not-allowed;" title="Contact Admin to update CGPA">
+            <input type="text" id="p_skills" placeholder="Skills (comma separated)">
+            <input type="url" id="p_linkedin" placeholder="LinkedIn URL">
+            <input type="url" id="p_github" placeholder="GitHub URL">
+          </div>
+          <textarea id="p_address" placeholder="Address"></textarea>
+          <textarea id="p_objective" placeholder="Career Objective"></textarea>
+          <textarea id="p_experience" placeholder="Work Experience / Internships"></textarea>
+          <textarea id="p_projects" placeholder="Key Projects"></textarea>
+          <button type="submit" class="btn" style="width: 100%">Save Profile</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- COMPANIES TAB -->
+    <div id="tab-companies" class="tab-content d-none">
+      <h3>Available Drives</h3>
+      <div id="companiesList"></div>
+    </div>
+
+    <!-- STATUS TAB -->
+    <div id="tab-status" class="tab-content d-none">
+      <h3>My Applications Timeline</h3>
+      <div class="glass-card" style="padding: 0; overflow-x: auto;">
+        <table style="margin:0;">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="applicationsList"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="nav-item active" onclick="switchTab('dashboard')">Home</div>
+    <div class="nav-item" onclick="switchTab('companies')">Companies</div>
+    <div class="nav-item" onclick="switchTab('status')">Status</div>
+    <div class="nav-item" style="color: #ff2a2a;" onclick="logout()">Exit</div>
+  </div>
+
+  <!-- Apply Job Modal -->
+  <div id="applyModal" class="modal-overlay d-none">
+    <div class="modal-content" style="max-width: 500px;">
+      <h3 id="applyCompanyName" style="margin-top:0;">Apply</h3>
+      <p id="applyJobRole" style="color:#888; font-size:0.9rem; margin-bottom: 20px;"></p>
+      <form id="applyJobForm">
+        <input type="hidden" id="applyCompanyId">
+        <input type="url" id="applyResume" placeholder="Link to Resume (Google Drive / Portfolio)" required>
+        <textarea id="applyCoverLetter" placeholder="Cover Letter / Why should we hire you?" rows="4"
+          required></textarea>
+        <div style="display:flex; gap:10px; margin-top: 10px;">
+          <button type="submit" class="btn" style="flex:1;">Submit Application</button>
+          <button type="button" class="btn btn-outline"
+            onclick="document.getElementById('applyModal').classList.add('d-none')">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Password Modal -->
+  <div id="passwordModal" class="modal-overlay d-none">
+    <div class="modal-content" style="max-width: 400px; text-align: center;">
+      <h3 style="margin-top:0;">Change Password</h3>
+      <p style="color:#888; font-size:0.9rem; margin-bottom: 20px;">You must set a new password.</p>
+      <form id="passwordForm">
+        <input type="password" id="old_pass" placeholder="Current Password" required
+          style="width: 100%; box-sizing: border-box; margin-bottom: 10px;">
+        <input type="password" id="new_pass" placeholder="New Password" required
+          style="width: 100%; box-sizing: border-box; margin-bottom: 20px;">
+        <div style="display:flex; gap:10px;">
+          <button type="submit" class="btn" style="flex:1;">Update Password</button>
+          <button type="button" class="btn btn-outline" id="passCancelBtn" style="flex:1;"
+            onclick="document.getElementById('passwordModal').classList.add('d-none')">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="customModal" class="modal-overlay d-none">
+    <div class="modal-content">
+      <p id="modalMsg"></p>
+      <button class="btn" id="modalOkBtn"
+        onclick="document.getElementById('customModal').classList.add('d-none')">OK</button>
+      <button class="btn btn-outline d-none" id="modalCancelBtn"
+        onclick="document.getElementById('customModal').classList.add('d-none')">Cancel</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+USN,Name,Age,Semester,Email,Phone,Branch,CGPA,Skills
+1RUA25CSE0080,ARPAN,19,5,arpanrhythm@rvu.edu.in,8095059655,Computer Science,8.0,java
+1RUA25CSE0081,Siddharth Rao,20,5,siddharth@rvu.edu.in,9845012345,Computer Science,8.5,"Python, SQL"
+1RUA25CSE0082,Ananya Iyer,19,3,ananya@rvu.edu.in,9731022446,Computer Science,9.2,"Java, Spring Boot"
+1RUA25CSE0083,Vikram Singh,21,7,vikram@rvu.edu.in,8123044556,Computer Science,7.4,"C++, Embedded Systems"
+1RUA25CSE0084,Priya Sharma,20,5,priya@rvu.edu.in,9900011223,Computer Science,8.1,"JavaScript, React"
+1RUA25CSE0085,Aditya Verma,19,3,aditya@rvu.edu.in,9886055443,Computer Science,6.8,"HTML, CSS"
+1RUA25CSE0086,Meghana Reddy,22,7,meghana@rvu.edu.in,7022033441,Computer Science,9.5,"Data Science, R"
+1RUA25CSE0087,Rohan Das,20,5,rohan@rvu.edu.in,9448011992,Computer Science,7.9,"Node.js, MongoDB"
+1RUA25CSE0088,Sneha Kapoor,21,7,sneha@rvu.edu.in,8050077889,Computer Science,8.8,Machine Learning
+1RUA25CSE0089,Karthik N,19,3,karthik@rvu.edu.in,9141022334,Computer Science,7.2,"PHP, MySQL"
+1RUA25CSE0090,Ishani Maitra,20,5,ishani@rvu.edu.in,9611088776,Computer Science,9.1,"AWS, Docker"
+1RUA25CSE0091,Varun Malhotra,22,7,varun@rvu.edu.in,9844055667,Computer Science,6.5,Cybersecurity
+1RUA25CSE0092,Tara Deshmukh,19,3,tara@rvu.edu.in,7760011225,Computer Science,8.4,"UI/UX, Figma"
+1RUA25CSE0093,Rahul Hegde,21,5,rahul@rvu.edu.in,8884022331,Computer Science,7.7,"Android, Kotlin"
+1RUA25CSE0094,Sanjana Murthy,20,5,sanjana@rvu.edu.in,9945033442,Computer Science,9.3,"Go, Kubernetes"
+1RUA25CSE0095,Abhishek Roy,22,7,abhishek@rvu.edu.in,9035044559,Computer Science,8.0,"Tableau, PowerBI"
+1RUA25CSE0096,Nisha Gupta,19,3,nisha@rvu.edu.in,9742011887,Computer Science,8.9,"Swift, iOS"
+1RUA25CSE0097,Manish Joshi,21,7,manish@rvu.edu.in,8105066772,Computer Science,7.1,"Rust, WebAssembly"
+1RUA25CSE0098,Kavya Bhat,20,5,kavya@rvu.edu.in,9880022336,Computer Science,9.7,"Blockchain, Solidity"
+1RUA25CSE0099,Deepak Kumar,19,3,deepak@rvu.edu.in,9164055448,Computer Science,6.2,Linux Shell
+1RUA25CSE0100,Suresh Raina,22,7,suresh@rvu.edu.in,9980077661,Computer Science,8.3,"C#, Unity"
+1RUA25CSE0101,Tanvi Shah,20,5,tanvi@rvu.edu.in,9481011229,Computer Science,9.0,"Vue.js, Firebase"
+1RUA25CSE0102,Yashwanth G,21,7,yash@rvu.edu.in,8861033447,Computer Science,7.5,"DevOps, Jenkins"
+1RUA25CSE0103,Zoya Khan,19,3,zoya@rvu.edu.in,9739055663,Computer Science,8.6,"GraphQL, Apollo"
+1RUA25CSE0104,Pranav Rao,22,7,pranav@rvu.edu.in,9916022884,Computer Science,7.8,"Angular, TypeScript"
+1RUA25CSE0105,Esha Dwivedi,20,5,esha@rvu.edu.in,8147044112,Computer Science,9.4,"Hadoop, Spark"
+1RUA25CSE0106,Aarav Sharma,20,5,aarav.s@rvu.edu.in,9845011223,Computer Science,8.45,"Java, SQL"
+1RUA25CSE0107,Ishita Patel,19,3,ishita.p@rvu.edu.in,9731022334,Computer Science,9.12,"Python, Django"
+1RUA25CSE0108,Rohan Mehra,21,7,rohan.m@rvu.edu.in,8123033445,Computer Science,7.3,"C++, Linux"
+1RUA25CSE0109,Sanya Gupta,20,5,sanya.g@rvu.edu.in,9900044556,Computer Science,8.88,"React, Node.js"
+1RUA25CSE0110,Arjun Nair,19,3,arjun.n@rvu.edu.in,9886055667,Computer Science,6.95,"HTML, CSS, JS"
+1RUA25CSE0111,Kavya Iyer,22,7,kavya.i@rvu.edu.in,7022066778,Computer Science,9.4,Machine Learning
+1RUA25CSE0112,Manoj Kumar,20,5,manoj.k@rvu.edu.in,9448077889,Computer Science,7.15,"PHP, Laravel"
+1RUA25CSE0113,Diya Fernandez,21,7,diya.f@rvu.edu.in,8050088990,Computer Science,8.65,"AWS, Terraform"
+1RUA25CSE0114,Vivek Oberoi,19,3,vivek.o@rvu.edu.in,9141099001,Computer Science,7.8,"C#, Unity"
+1RUA25CSE0115,Anjali Menon,20,5,anjali.m@rvu.edu.in,9611011222,Computer Science,9.25,"Data Science, R"
+1RUA25CSE0116,Rahul Dravid,22,7,rahul.d@rvu.edu.in,9844022333,Computer Science,6.7,Cybersecurity
+1RUA25CSE0117,Snehal Patil,19,3,snehal.p@rvu.edu.in,7760033444,Computer Science,8.33,"UI/UX, Figma"
+1RUA25CSE0118,Karan Johar,21,5,karan.j@rvu.edu.in,8884044555,Computer Science,7.55,"Android, Flutter"
+1RUA25CSE0119,Meera Bai,20,5,meera.b@rvu.edu.in,9945055666,Computer Science,9.6,"Go, Docker"
+1RUA25CSE0120,Suresh Prabhu,22,7,suresh.p@rvu.edu.in,9035066777,Computer Science,8.12,"Tableau, Excel"
+1RUA25CSE0121,Nalini Singh,19,3,nalini.s@rvu.edu.in,9742077888,Computer Science,8.95,"iOS, Swift"
+1RUA25CSE0122,Pankaj Tripathi,21,7,pankaj.t@rvu.edu.in,8105088999,Computer Science,7.25,"Rust, WebAssembly"
+1RUA25CSE0123,Kriti Sanon,20,5,kriti.s@rvu.edu.in,9880099000,Computer Science,9.82,"Blockchain, Solidity"
+1RUA25CSE0124,Deepak Hooda,19,3,deepak.h@rvu.edu.in,9164011221,Computer Science,6.4,Shell Scripting
+1RUA25CSE0125,Vicky Kaushal,22,7,vicky.k@rvu.edu.in,9980022332,Computer Science,8.5,"Unity, VR"
+1RUA25CSE0126,Alia Bhatt,20,5,alia.b@rvu.edu.in,9481033443,Computer Science,9.15,"Vue.js, Firebase"
+1RUA25CSE0127,Varun Dhawan,21,7,varun.d@rvu.edu.in,8861044554,Computer Science,7.7,"Jenkins, CI/CD"
+1RUA25CSE0128,Kiara Advani,19,3,kiara.a@rvu.edu.in,9739055665,Computer Science,8.75,"GraphQL, Redis"
+1RUA25CSE0129,Ranbir Kapoor,22,7,ranbir.k@rvu.edu.in,9916066776,Computer Science,7.9,"Angular, TS"
+1RUA25CSE0130,Sara Ali Khan,20,5,sara.a@rvu.edu.in,8147077887,Computer Science,9.35,"Hadoop, Kafka"
+1RUA25CSE0131,Ayushmann K,21,5,ayush.k@rvu.edu.in,9845088998,Computer Science,8.2,"Java, Microservices"
+1RUA25CSE0132,Taapsee Pannu,19,3,taapsee.p@rvu.edu.in,9731099009,Computer Science,9.05,"Python, Flask"
+1RUA25CSE0133,Rajkumar Rao,21,7,raj.r@rvu.edu.in,8123011220,Computer Science,7.45,"C, Embedded C"
+1RUA25CSE0134,Bhumi Pednekar,20,5,bhumi.p@rvu.edu.in,9900022331,Computer Science,8.92,"React, Redux"
+1RUA25CSE0135,Kartik Aaryan,19,3,kartik.a@rvu.edu.in,9886033442,Computer Science,6.6,"HTML, CSS"
+1RUA25CSE0136,Radhika Apte,22,7,radhika.a@rvu.edu.in,7022044553,Computer Science,9.55,Deep Learning
+1RUA25CSE0137,Siddhant C,20,5,sid.c@rvu.edu.in,9448055664,Computer Science,7.85,"Node.js, Express"
+1RUA25CSE0138,Janhvi Kapoor,21,7,janhvi.k@rvu.edu.in,8050066775,Computer Science,8.7,"Azure, Cloud"
+1RUA25CSE0139,Ishaan Khatter,19,3,ishaan.k@rvu.edu.in,9141077886,Computer Science,7.95,"SQL, NoSQL"
+1RUA25CSE0140,Ananya Panday,20,5,ananya.p@rvu.edu.in,9611088997,Computer Science,9.22,"AWS, Serverless"
+1RUA25CSE0141,Tiger Shroff,22,7,tiger.s@rvu.edu.in,9844099008,Computer Science,6.85,Penetration Testing
+1RUA25CSE0142,Tara Sutaria,19,3,tara.s@rvu.edu.in,7760011229,Computer Science,8.48,"Adobe XD, Sketch"
+1RUA25CSE0143,Aditya Roy,21,5,aditya.r@rvu.edu.in,8884022330,Computer Science,7.62,React Native
+1RUA25CSE0144,Shraddha Kapoor,20,5,shraddha.k@rvu.edu.in,9945033441,Computer Science,9.45,Kubernetes
+1RUA25CSE0145,Sidharth M,22,7,sid.m@rvu.edu.in,9035044552,Computer Science,8.25,"PowerBI, SQL"
+1RUA25CSE0146,Parineeti Chopra,19,3,pari.c@rvu.edu.in,9742055663,Computer Science,8.82,Objective-C
+1RUA25CSE0147,Arjun Kapoor,21,7,arjun.k@rvu.edu.in,8105066774,Computer Science,7.1,"C++, STL"
+1RUA25CSE0148,Sonakshi Sinha,20,5,sona.s@rvu.edu.in,9880077885,Computer Science,9.75,"Ethereum, Web3"
+1RUA25CSE0149,Varun Sharma,19,3,varun.s@rvu.edu.in,9164088996,Computer Science,6.35,Bash
+1RUA25CSE0150,Pulkit Samrat,22,7,pulkit.s@rvu.edu.in,9980099007,Computer Science,8.58,"ASP.NET, C#"
+1RUA25CSE0151,Yami Gautam,20,5,yami.g@rvu.edu.in,9481011228,Computer Science,9.18,"Svelte, Firebase"
+1RUA25CSE0152,Vikrant Massey,21,7,vikrant.m@rvu.edu.in,8861022339,Computer Science,7.75,Ansible
+1RUA25CSE0153,Sanya Malhotra,19,3,sanya.m@rvu.edu.in,9739033440,Computer Science,8.68,Apollo Client
+1RUA25CSE0154,Fatima Sana,22,7,fatima.s@rvu.edu.in,9916044551,Computer Science,7.82,Angular
+1RUA25CSE0155,Abhishek B,20,5,abhi.b@rvu.edu.in,8147055662,Computer Science,9.42,PySpark
+1RUA25CSE0156,John Abraham,21,5,john.a@rvu.edu.in,9845066773,Computer Science,8.15,"Java, Hibernate"
+1RUA25CSE0157,Bipasha Basu,19,3,bipasha.b@rvu.edu.in,9731077884,Computer Science,9.08,"Pandas, NumPy"
+1RUA25CSE0158,Emraan Hashmi,21,7,emraan.h@rvu.edu.in,8123088995,Computer Science,7.35,"C#, .NET"
+1RUA25CSE0159,Vidya Balan,20,5,vidya.b@rvu.edu.in,9900099006,Computer Science,8.98,Next.js
+1RUA25CSE0160,Madhavan R,19,3,mad.r@rvu.edu.in,9886011227,Computer Science,6.75,"XML, JSON"
+1RUA25CSE0161,Surya Sivakumar,22,7,surya.s@rvu.edu.in,7022022338,Computer Science,9.62,Computer Vision
+1RUA25CSE0162,Jyothika S,20,5,jyothika.s@rvu.edu.in,9448033449,Computer Science,7.92,FastAPI
+1RUA25CSE0163,Vijay Sethupathi,21,7,vijay.s@rvu.edu.in,8050044550,Computer Science,8.72,GCP
+1RUA25CSE0164,Nayanthara K,19,3,nayan.k@rvu.edu.in,9141055661,Computer Science,7.88,PostgreSQL
+1RUA25CSE0165,Samantha Ruth,20,5,sam.r@rvu.edu.in,9611066772,Computer Science,9.28,"Lambda, S3"
+1RUA25CSE0166,Allu Arjun,22,7,allu.a@rvu.edu.in,9844077883,Computer Science,6.9,Ethical Hacking
+1RUA25CSE0167,Rashmika M,19,3,rash.m@rvu.edu.in,7760088994,Computer Science,8.42,Material UI
+1RUA25CSE0168,Mahesh Babu,21,5,mahesh.b@rvu.edu.in,8884099005,Computer Science,7.58,NativeScript
+1RUA25CSE0169,Kajal Aggarwal,20,5,kajal.a@rvu.edu.in,9945011226,Computer Science,9.52,Helm
+1RUA25CSE0170,Prabhas Raju,22,7,prabhas.r@rvu.edu.in,9035022337,Computer Science,8.3,"SAS, SPSS"
+1RUA25CSE0171,Anushka Shetty,19,3,anushka.s@rvu.edu.in,9742033448,Computer Science,8.85,Dart
+1RUA25CSE0172,Ram Charan,21,7,ram.c@rvu.edu.in,8105044559,Computer Science,7.18,Algorithms
+1RUA25CSE0173,Jr NTR,20,5,jrntr.t@rvu.edu.in,9880055660,Computer Science,9.78,Smart Contracts
+1RUA25CSE0174,Pawan Kalyan,19,3,pawan.k@rvu.edu.in,9164066771,Computer Science,6.45,PowerShell
+1RUA25CSE0175,Nani G,22,7,nani.g@rvu.edu.in,9980077882,Computer Science,8.62,WPF
+1RUA25CSE0176,Sai Pallavi,20,5,sai.p@rvu.edu.in,9481088993,Computer Science,9.2,Tailwind CSS
+1RUA25CSE0177,Keerthy Suresh,21,7,keerthy.s@rvu.edu.in,8861099004,Computer Science,7.68,CircleCI
+1RUA25CSE0178,Dhanush K,19,3,dhanush.k@rvu.edu.in,9739011225,Computer Science,8.72,Relay
+1RUA25CSE0179,Dulquer Salmaan,22,7,dulquer.s@rvu.edu.in,9916022336,Computer Science,7.85,RxJS
+1RUA25CSE0180,Nivin Pauly,20,5,nivin.p@rvu.edu.in,8147033447,Computer Science,9.48,NLP

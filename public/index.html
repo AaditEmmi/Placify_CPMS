@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placify - Sign In</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .login-container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .vertical-brand {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      font-family: 'NDot55', monospace;
+      color: #fff;
+      letter-spacing: 3px;
+      font-size: 1.2rem;
+      transform-origin: left center;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 420px;
+      background: #2a2a2a;
+      border-radius: 16px;
+      padding: 40px;
+      box-sizing: border-box;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .login-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin-bottom: 30px;
+      color: #fff;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+
+    .login-input {
+      background: transparent;
+      border: 1px solid #555;
+      color: #fff;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+
+    .login-input::placeholder {
+      color: #888;
+    }
+
+    .btn-signin {
+      background: #fff;
+      color: #000;
+      width: 100%;
+      padding: 14px;
+      border-radius: 24px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .btn-signin:hover {
+      transform: scale(1.02);
+    }
+
+    .agreement-text {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #888;
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+
+    .btn-create {
+      background: #444;
+      color: #fff;
+      width: 100%;
+      padding: 14px;
+      border-radius: 24px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-create:hover {
+      background: #555;
+    }
+
+    .admin-link {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      color: #555;
+      font-size: 0.8rem;
+      text-decoration: none;
+      font-family: 'NDot55';
+    }
+
+    .admin-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="vertical-brand glitch-hover">PLACIFY</div>
+
+    <!-- Sign In Form -->
+    <div class="login-card" id="signInCard">
+      <h1 class="login-title">Sign in</h1>
+      <form id="loginForm">
+        <input type="text" id="l_usn" class="login-input" placeholder="USN" required>
+        <input type="password" id="l_password" class="login-input" placeholder="Password" required>
+        <button type="submit" class="btn-signin">Sign in</button>
+      </form>
+      <p class="agreement-text">By signing in, you agree to our<br><strong>Privacy Policy</strong> and
+        <strong>University Network Agreement</strong>.</p>
+    </div>
+
+    <a href="admin_login.html" class="admin-link">Admin Portal >></a>
+  </div>
+
+  <!-- Custom Modal -->
+  <div id="customModal" class="modal-overlay d-none">
+    <div class="modal-content">
+      <p id="modalMsg"></p>
+      <button class="btn" onclick="document.getElementById('customModal').classList.add('d-none')">OK</button>
+    </div>
+  </div>
+
+  <script>
+    function showModal(msg) {
+      document.getElementById('modalMsg').innerText = msg;
+      document.getElementById('customModal').classList.remove('d-none');
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const usn = document.getElementById('l_usn').value;
+      const password = document.getElementById('l_password').value;
+      try {
+        const res = await fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ usn, password }) });
+        const data = await res.json();
+        if (data.success && data.user.role === 'student') {
+          localStorage.setItem('usn', data.user.usn);
+          localStorage.setItem('role', 'student');
+          localStorage.setItem('is_first_login', data.user.is_first_login);
+          window.location.href = 'student_dashboard.html';
+        } else if (data.success && data.user.role === 'admin') {
+          showModal('Admins must log in via the Admin Portal.');
+        } else {
+          showModal('Login failed: ' + data.message);
+        }
+      } catch (err) { showModal('Server error'); }
+    });
+  </script>
+</body>
+
+</html>
